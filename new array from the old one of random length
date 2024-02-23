@@ -1,0 +1,13 @@
+let arr = ['b', 't', 'r', 'e'];
+
+  function func111 (arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        result.length = Math.floor(Math.random()*arr.length);
+        let a = arr[Math.floor(Math.random()*arr.length)];
+        result.indexOf(a) == -1 && result.push(a);
+        
+        
+    }
+    return result.filter(e=> e !== '') ;
+}
